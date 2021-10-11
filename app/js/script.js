@@ -34,11 +34,16 @@ var x = setInterval(function() {
   }
 
   // Display the result in the element with id="counter" and the html for the rest of the elements
-  document.getElementById("counter").innerHTML = 
-  '<div class="count-num days-count">'    + days    + '<span class="count-num-inner"></span><div class="count-text">days</div></div>' + 
-  '<div class="count-num hours-count">'   + hours   + '<span class="count-num-inner"></span><div class="count-text">hours</div></div>' + 
-  '<div class="count-num minutes-count">' + minutes + '<span class="count-num-inner"></span><div class="count-text">minutes</div></div>' + 
-  '<div class="count-num seconds-count">' + seconds + '<span class="count-num-inner"></span><div class="count-text">seconds</div></div>';
+  // document.getElementById('counter').innerHTML = 
+  // '<div class="count-num days-count">'    + days    + '<span class="count-num-inner"></span><div class="count-text">days</div></div>' + 
+  // '<div class="count-num hours-count">'   + hours   + '<span class="count-num-inner"></span><div class="count-text">hours</div></div>' + 
+  // '<div class="count-num minutes-count">' + minutes + '<span class="count-num-inner"></span><div class="count-text">minutes</div></div>' + 
+  // '<div class="count-num seconds-count">' + seconds + '<span class="count-num-inner"></span><div class="count-text">seconds</div><div class="swing-bottom-fwd"></div></div>';
+
+  document.getElementById('days-count').innerHTML = days;
+  document.getElementById('hours-count').innerHTML = hours;
+  document.getElementById('minutes-count').innerHTML = minutes;
+  document.getElementById('seconds-count').innerHTML = seconds;
 
   // If the count down is finished, write some text
   if (distance < 0) {
