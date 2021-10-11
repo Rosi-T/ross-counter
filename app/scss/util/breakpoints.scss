@@ -1,0 +1,31 @@
+// 501px, 1150px, 1400px
+$breakpoints-up: (
+	'medium': '31.3125', // 501px
+	'large': '71.875em', // 1150px
+	'xlarge': '87.5em',  // 1400 px
+);
+
+// 500px, 1149px, 1399px
+$breakpoints-down: (
+	'small': '31.25em',    // 500px
+	'medium': '71.8125em', // 1149px
+	'large': '87.4375em',  // 1399px
+);
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
+// Usage Example:
+// h1 {
+//     font-size: 2rem; // regular size   
+//     @include breakpoint(large) { font-size: 5rem; } // size on large screens
+// }

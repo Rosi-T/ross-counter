@@ -1,0 +1,13 @@
+// Using CSS preprocessors so they can be easily manipulated vis javaScript
+
+:root {
+
+    // Counter colors
+    --counter-grayish-blue: hsl(237, 18%, 59%);
+    --counter-soft-red: hsl(345, 95%, 68%);
+    --counter-white: hsl(0, 0%, 100%);
+    --counter-dark-desaturated-blue: hsl(236, 21%, 26%);
+    --counter-very-dark-blue: hsl(235, 16%, 14%);
+    --counter-very-dark-black-blue: hsl(234, 17%, 12%);
+    --counter-shadow-blue: hsl(235, 20%, 32%); 
+}
