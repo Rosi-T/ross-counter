@@ -49,5 +49,6 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("counter").innerHTML = "EXPIRED";
+    console.log('Expired');
   }
 }, 1000);
